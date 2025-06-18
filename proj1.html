@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projc1.css"/>
+    </head>
+<body>
+    <h1>Course Registration Form</h1>
+    <form action>
+        <fieldset>
+            <legend>Personal details</legend>
+            <table>
+                    <tr>
+                        <td>
+                            <label>First Name</label>
+                        </td>
+                        <td>
+                            <input type="text" name="FN" placeholder="Ex:NANDHA" size="15" maxlength="10" required>
+                            <p>Enter your Name</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Surname</label>
+                        </td>
+                        <td>
+                            <input type="text" name="LN" placeholder="Ex:S" size="15" optional>
+                            <p>Enter your LastName</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Mobile Number</label>
+                        </td>
+                        <td>
+                            <input type="tel" name="Mobile Number" placeholder="Ex:9998887771" size="10" required>
+                            <p>Enter your MobileNumber</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Email</label>
+                        </td>
+                        <td>
+                            <input type="Email" name="mail id" placeholder="Ex:theforms123@gmail.com" size="15" required>
+                            <p>Enter yout Email</p>
+                            <img class="valid" src="./ok.png" id="valid">
+                            <img class="invalid" src="./wrong.png" id="invalid">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Password</label>
+                        </td>
+                        <td>
+                            <input type="password" name="password" placeholder="min 8 characters" min="8" size="15" required>
+                            <p>Enter your Password</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Confirm Password</label>
+                        </td>
+                        <td>
+                            <input type="password" name="confirm password" placeholder="min 8 characters" size="15" required>
+                            <p>ReEnter your password</p>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>DOB</label>
+                        </td>
+                        <td>
+                            <input type="date" name="dob" required>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>AGE</label>
+                        </td>
+                        <td>
+                            <input type="number" name="age" required min="18" max="100">
+                            <p>Enter your AGE</p>
+                            <img class="valid" src="./ok.png">
+                            <img class="invalid" src="./wrong.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Gender</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" value="M">
+                            <label>Male</label>
+                            <input type="radio" name="gender" value="F">
+                            <label>Female</label>
+                            <input type="radio" name="gender" value="C">
+                            <label>Others</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Select Country</td>
+                        <td>
+                            <select name="Country">
+                                <option class="opt" value="INDIA">INDIA</option>
+                                <option class="opt" value="USA">USA</option>
+                                <option class="opt" value="CHINA">CHINA</option>
+                            </select>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Upload Picture</label>
+                        </td>
+                        <td>
+                            <input type="file" name="pic">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="button-center">
+                            <input type="reset">
+                            </div>
+                        </td>
+                    </tr>
+                
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Course Details</legend>
+            <legend>Select Course</legend>
+            <select name="Course">
+                <option value="PFS">Python Full Stack</option>
+                <option value="JFS">Java Full Stack</option>
+                <option value="CJ">Core Java</option>
+                <option value="PDS">Python for DataScience</option>
+            </select>
+            <br>
+            <label>Delivery Mode</label>
+            <input type="radio" name="mode" value="ON">
+            <label for>ONLINE</label>
+            <input type="radio" name="mode" value="OFF">
+            <label for>OFFLINE</label>
+            <br>
+            <br>
+            <label>INSTITUTE NAME</label>
+            <input type="text" value="TAP ACADEMY" readonly>
+            <br>
+            <label>Comments</label>
+            <br>
+            <textarea rows="4" cols="40"></textarea>
+        </fieldset>
+        <input type="submit" name id>
+    </form>
+</body>
+</html>
